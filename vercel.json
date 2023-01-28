@@ -1,0 +1,14 @@
+{
+	"builds":[
+		{
+			"src":"youtubedjango/wsgi.py",
+			"use":"@vercel/python"
+		}
+	],
+	"routes":[
+		{
+			"src":"/(.*)",
+			"dest":"youtubedjango/wsgi.py"
+		}
+	]
+}
